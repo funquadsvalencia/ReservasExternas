@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Su reserva en JetSkiValencia</title>
-    <!-- Google Fonts for Clean, Premium Typography -->
+    <!-- Premium Global Google Typography Integration -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google Material Icons Library (Loads instantly via Google Servers) -->
+    <link href="https://googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <style>
         * {
             box-sizing: border-box;
@@ -17,7 +21,7 @@
         }
 
         body {
-            background-color: #64ccf4; /* Exact sky-blue branding background from your original dashboard screenshot */
+            background-color: #64ccf4; /* Match screen layout canvas backdrop header color from original screenshot */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -42,9 +46,9 @@
         }
 
         .logo-container img {
-            max-width: 115px; /* Scaled perfectly to match the circular icon proportions */
+            max-width: 115px;
             height: auto;
-            border-radius: 50%; /* Keeps the custom brand border cleanly circular */
+            object-fit: contain;
         }
 
         h1 {
@@ -86,31 +90,36 @@
             transform: translateY(-1px);
         }
 
-        .icon {
-            width: 32px;
-            height: 32px;
+        .icon-wrapper {
+            width: 36px;
+            height: 36px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-right: 15px;
         }
 
-        .icon img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
+        /* Styling for the vector font icons */
+        .material-icons {
+            font-size: 28px;
+            user-select: none;
         }
+
+        /* Individual icon brand colors */
+        .color-maps { color: #ea4335; }    /* Google Maps Red */
+        .color-whatsapp { color: #25d366; }/* WhatsApp Green */
+        .color-phone { color: #475569; }   /* Neutral Slate Dark for regular phone call */
 
         .btn-text {
             flex-grow: 1;
             text-align: left;
-            color: #3b82f6; /* Beautiful responsive template shortcut text blue color */
+            color: #3b82f6; /* Native app shortcut interface link blue */
             font-size: 16px;
             font-weight: 500;
         }
 
         .btn-text.dark {
-            color: #0f172a; /* Solid clean text color for direct dial action elements */
+            color: #0f172a;
         }
 
         .arrow {
@@ -124,19 +133,18 @@
 
     <div class="container">
         
-        <!-- Live JetSki Valencia Brand Logo Vector Asset -->
+        <!-- Local Brand Asset Reference Using logo.png -->
         <div class="logo-container">
-            <img src="https://squarespace-cdn.com" alt="JetSki Valencia Logo">
+            <img src="logo.png" alt="JetSki Valencia Logo">
         </div>
 
-        <!-- Typography Context Matches -->
         <h1>Su reserva en JetSkiValencia</h1>
         <p class="subtitle">Motos de agua / Katak / Paddle / Barco</p>
 
-        <!-- Google Maps Redirect Element Button -->
+        <!-- Google Maps Location Redirect Element Button -->
         <a href="https://goo.gl" target="_blank" class="action-button">
-            <div class="icon">
-                <img src="https://wikimedia.org" alt="Google Maps">
+            <div class="icon-wrapper">
+                <span class="material-icons color-maps">place</span>
             </div>
             <div class="btn-text">Ubicación</div>
             <div class="arrow">→</div>
@@ -144,19 +152,19 @@
 
         <div class="section-label">Encuéntreme en</div>
 
-        <!-- WhatsApp Portal Connect Element Button -->
+        <!-- WhatsApp Chat Portal Element Button -->
         <a href="https://wa.me" target="_blank" class="action-button">
-            <div class="icon">
-                <img src="https://wikimedia.org" alt="WhatsApp">
+            <div class="icon-wrapper">
+                <span class="material-icons color-whatsapp">chat</span>
             </div>
             <div class="btn-text">WhatsApp</div>
             <div class="arrow">→</div>
         </a>
 
-        <!-- Voice Call Integration Interface Routing Element Button -->
+        <!-- Direct Voice Cell Action Call Routing Button -->
         <a href="tel:+34662694007" class="action-button">
-            <div class="icon" style="opacity: 0.75;">
-                <img src="https://flaticon.com" alt="Call Phone">
+            <div class="icon-wrapper">
+                <span class="material-icons color-phone">phone</span>
             </div>
             <div class="btn-text dark">Llamar por teléfono</div>
             <div class="arrow">→</div>
