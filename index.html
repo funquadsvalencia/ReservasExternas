@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Su reserva en JetSkiValencia</title>
-    <!-- Premium Global Google Typography Integration -->
+    <!-- Tipografía Premium Google Poppins -->
     <link rel="preconnect" href="https://googleapis.com">
     <link rel="preconnect" href="https://gstatic.com" crossorigin>
     <link href="https://googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Google Material Icons Library (Loads instantly via Google Servers) -->
+    <!-- ENLACE CORREGIDO: Carga la librería oficial de iconos de Google -->
     <link href="https://googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
@@ -21,7 +21,7 @@
         }
 
         body {
-            background-color: #64ccf4; /* Match screen layout canvas backdrop header color from original screenshot */
+            background-color: #64ccf4; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -46,7 +46,7 @@
         }
 
         .logo-container img {
-            max-width: 115px;
+            max-width: 130px;
             height: auto;
             object-fit: contain;
         }
@@ -99,21 +99,33 @@
             margin-right: 15px;
         }
 
-        /* Styling for the vector font icons */
+        /* Estilos críticos corregidos para forzar el renderizado de fuentes */
         .material-icons {
+            font-family: 'Material Icons' !important;
+            font-weight: normal;
+            font-style: normal;
             font-size: 28px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
             user-select: none;
         }
 
-        /* Individual icon brand colors */
-        .color-maps { color: #ea4335; }    /* Google Maps Red */
-        .color-whatsapp { color: #25d366; }/* WhatsApp Green */
-        .color-phone { color: #475569; }   /* Neutral Slate Dark for regular phone call */
+        /* Colores corporativos aplicados a los iconos */
+        .color-maps { color: #ea4335; }    /* Rojo Google Maps */
+        .color-whatsapp { color: #25d366; }/* Verde WhatsApp */
+        .color-phone { color: #475569; }   /* Gris Pizarra */
 
         .btn-text {
             flex-grow: 1;
             text-align: left;
-            color: #3b82f6; /* Native app shortcut interface link blue */
+            color: #3b82f6; 
             font-size: 16px;
             font-weight: 500;
         }
@@ -133,7 +145,7 @@
 
     <div class="container">
         
-        <!-- Local Brand Asset Reference Using logo.png -->
+        <!-- Logotipo corporativo local -->
         <div class="logo-container">
             <img src="logo.png" alt="JetSki Valencia Logo">
         </div>
@@ -141,7 +153,7 @@
         <h1>Su reserva en JetSkiValencia</h1>
         <p class="subtitle">Motos de agua / Katak / Paddle / Barco</p>
 
-        <!-- Google Maps Location Redirect Element Button -->
+        <!-- Botón de Ubicación con tu enlace real restaurado -->
         <a href="https://goo.gl" target="_blank" class="action-button">
             <div class="icon-wrapper">
                 <span class="material-icons color-maps">place</span>
@@ -150,9 +162,10 @@
             <div class="arrow">→</div>
         </a>
 
-        <div class="section-label">Encuéntreme en</div>
+        <!-- Texto modificado solicitado -->
+        <div class="section-label">Contáctanos por</div>
 
-        <!-- WhatsApp Chat Portal Element Button -->
+        <!-- Botón de WhatsApp con tu enlace real restaurado -->
         <a href="https://wa.me" target="_blank" class="action-button">
             <div class="icon-wrapper">
                 <span class="material-icons color-whatsapp">chat</span>
@@ -161,7 +174,7 @@
             <div class="arrow">→</div>
         </a>
 
-        <!-- Direct Voice Cell Action Call Routing Button -->
+        <!-- Botón de Llamada Directa -->
         <a href="tel:+34662694007" class="action-button">
             <div class="icon-wrapper">
                 <span class="material-icons color-phone">phone</span>
