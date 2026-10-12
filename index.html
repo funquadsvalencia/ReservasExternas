@@ -1,1 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Su reserva en JetSkiValencia</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
 
+        body {
+            background-color: #55cae5; /* Exact match to the clear blue sky tone in your screenshot header */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 460px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+            padding: 40px 24px;
+            text-align: center;
+        }
+
+        .logo-container {
+            margin-bottom: 24px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo-container img {
+            max-width: 105px;
+            height: auto;
+        }
+
+        h1 {
+            color: #0b1a30;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 14px;
+            font-weight: 400;
+            margin-bottom: 35px;
+        }
+
+        .section-label {
+            text-align: left;
+            color: #1e293b;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 24px 0 10px 4px;
+        }
+
+        .action-button {
+            display: flex;
+            align-items: center;
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 14px 18px;
+            text-decoration: none;
+            transition: background 0.15s ease;
+            margin-bottom: 12px;
+        }
+
+        .action-button:hover {
+            background-color: #f8fafc;
+        }
+
+        .icon {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 14px;
+        }
+
+        .icon img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .btn-text {
+            flex-grow: 1;
+            text-align: left;
+            color: #3b82f6; /* Modern digital shortcut link blue text color */
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        /* Black text styling variation for standard direct cellular actions */
+        .btn-text.dark {
+            color: #0f172a;
+        }
+
+        .arrow {
+            color: #94a3b8;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="logo-container">
+            <img src="https://squarespace-cdn.com" alt="JetSki Valencia Logo">
+        </div>
+
+        <!-- Main text descriptors matching your user image -->
+        <h1>Su reserva en JetSkiValencia</h1>
+        <p class="subtitle">Motos de agua / Katak / Paddle / Barco</p>
+
+        <!-- Google Maps Link Button -->
+        <a href="https://goo.gl" target="_blank" class="action-button">
+            <div class="icon">
+                <img src="https://wikimedia.org" alt="Google Maps">
+            </div>
+            <div class="btn-text">Ubicación</div>
+            <div class="arrow">→</div>
+        </a>
+
+        <div class="section-label">Encuéntreme en</div>
+
+        <!-- WhatsApp Link Button -->
+        <a href="https://wa.me" target="_blank" class="action-button">
+            <div class="icon">
+                <img src="https://wikimedia.org" alt="WhatsApp">
+            </div>
+            <div class="btn-text">WhatsApp</div>
+            <div class="arrow">→</div>
+        </a>
+
+        <!-- Added Direct Voice Cellular Action Routing Button -->
+        <a href="tel:+34662694007" class="action-button">
+            <div class="icon" style="font-size: 20px; filter: grayscale(100%); opacity: 0.6;">
+                📞
+            </div>
+            <div class="btn-text dark">Llamar por teléfono</div>
+            <div class="arrow">→</div>
+        </a>
+    </div>
+
+</body>
+</html>
